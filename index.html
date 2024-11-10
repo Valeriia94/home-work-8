@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float Layout</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Один блок ліворуч, один праворуч -->
+    <div class="container clearfix">
+      <div class="block left">Блок ліворуч</div>
+      <div class="block right">Блок праворуч</div>
+    </div>
+
+    <!-- Один блок ліворуч, кілька блоків праворуч -->
+    <div class="container clearfix">
+      <div class="block left">Блок ліворуч</div>
+      <div class="block right">Блок праворуч 1</div>
+      <div class="block right">Блок праворуч 2</div>
+    </div>
+
+    <!-- Два блоки ліворуч, два праворуч -->
+    <div class="container clearfix">
+      <div class="block left">Блок ліворуч 1</div>
+      <div class="block left">Блок ліворуч 2</div>
+      <div class="block right">Блок праворуч 1</div>
+      <div class="block right">Блок праворуч 2</div>
+    </div>
+
+    <div class="container clearfix">
+      <div class="right-container">
+        <div class="block left large">Великий блок ліворуч</div>
+        <div class="block right small">Малий блок праворуч 1</div>
+        <div class="block right small">Малий блок праворуч 2</div>
+      </div>
+    </div>
+    <div class="center-container clearfix">
+      <div class="block left large">Блок центр 1</div>
+      <div class="block right small">Блок центр 2</div>
+      <div class="block right small">Блок центр 3</div>
+    </div>
+  </body>
+</html>
